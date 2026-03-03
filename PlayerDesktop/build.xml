@@ -18,7 +18,7 @@
 	<property name="LudiiDocGen.location" value="../LudiiDocGen"/>
 	<property name="Language.location" value="../Language"/>
 	<property name="Player.location" value="../Player"/>
-	<property name="NetworkPrivate.location" value="../../LudiiPrivate/NetworkPrivate"/>
+	<!--<property name="NetworkPrivate.location" value="../../LudiiPrivate/NetworkPrivate"/>-->
     <property name="PlayerDesktop.location" value="."/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
@@ -122,7 +122,7 @@
         <path refid="Core.classpath"/>
     	<pathelement location="${Common.location}/lib/Trove4j_ApacheCommonsRNG.jar"/>
     </path>
-	<path id="NetworkPrivate.classpath">
+	<!--<path id="NetworkPrivate.classpath">
 	    <path refid="Player.classpath"/>
 	    <pathelement location="${NetworkPrivate.location}/bin"/>
 	    <path refid="Common.classpath"/>
@@ -163,7 +163,7 @@
 	    <pathelement location="${Common.location}/lib/json-20180813.jar"/>
 	    <path refid="Language.classpath"/>
 	    <path refid="PlayerDesktop.classpath"/>
-	</path>
+	</path>-->
     <path id="Player.classpath">
         <pathelement location="${Player.location}/bin"/>
         <path refid="Features.classpath"/>
@@ -237,7 +237,7 @@
 	<path id="PlayerDesktopWithPrivate.classpath">
 	    <pathelement location="bin"/>
 	   	<path refid="Player.classpath"/>
-		<path refid="NetworkPrivate.classpath"/>
+		<!--<path refid="NetworkPrivate.classpath"/>-->
 	    <pathelement location="${Common.location}/lib/json-20180813.jar"/>
 	    <!--<pathelement location="${Common.location}/lib/junit-4.12.jar"/>
 		<pathelement location="${Common.location}/lib/hamcrest-all-1.3.jar"/>-->
@@ -334,7 +334,7 @@
     	<ant antfile="build.xml" dir="${Generation.location}" inheritAll="false" target="clean"/>
 		<ant antfile="build.xml" dir="${Player.location}" inheritAll="false" target="clean"/>
         <ant antfile="build.xml" dir="${PlayerDesktop.location}" inheritAll="false" target="clean"/>
-    	<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="clean"/>
+    	<!--<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="clean"/>-->
     </target>
 	<target depends="clean" name="cleanallpublic">
 	    <ant antfile="build.xml" dir="${Common.location}" inheritAll="false" target="clean"/>
@@ -419,7 +419,7 @@
 	    </target>
 		
 	<target name="run">
-		<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="build-project"/>
+		<!--<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="build-project"/>-->
 		<java classname="app.StartDesktopApp" failonerror="true" fork="yes">
 	    	<jvmarg line="-da -dsa -XX:+UseStringDeduplication"/>
 	    	<classpath refid="PlayerDesktopWithPrivate.classpath"/>
@@ -436,7 +436,7 @@
 	
 	<target name="generate-release-files">
 		<!--<ant antfile="build.xml" dir="${Generation.location}" inheritAll="false" target="build-project"/>-->
-		<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="build-project"/>
+		<!--<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="build-project"/>-->
 		<java classname="app.utils.GenerateAliasesFile" fork="true" failonerror="true">
 			<classpath refid="PlayerDesktop.classpath"/>
 		</java>
@@ -504,7 +504,7 @@
 			<fileset dir="${Mining.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
 			<fileset dir="${Language.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
 			<fileset dir="${Player.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
-			<fileset dir="${NetworkPrivate.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
+			<!--<fileset dir="${NetworkPrivate.location}/bin" includes="**/*.class" excludes="**/package-info.class" />-->
 			<zipgroupfileset dir="${Common.location}/lib/" includes="**/*.jar" >
 				<exclude name="hamcrest-all-1.3.jar" />
 				<exclude name="json-20180813-sources.jar" />
@@ -544,7 +544,7 @@
 	
 	<target name="export_exhibition_jar" depends="cleanall,build-without-junit">
 		<mkdir dir="build" />
-		<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="build-project"/>
+		<!--<ant antfile="build.xml" dir="${NetworkPrivate.location}" inheritAll="false" target="build-project"/>-->
 		<jar destfile="build/Ludii.jar" basedir="bin" duplicate="preserve">
 			<exclude name="**/lud/board/**" />
 			<exclude name="**/lud/dominoes/**" />
@@ -595,7 +595,7 @@
 			<fileset dir="${Mining.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
 			<fileset dir="${Language.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
 			<fileset dir="${Player.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
-			<fileset dir="${NetworkPrivate.location}/bin" includes="**/*.class" excludes="**/package-info.class" />
+			<!--<fileset dir="${NetworkPrivate.location}/bin" includes="**/*.class" excludes="**/package-info.class" />-->
 			<zipgroupfileset dir="${Common.location}/lib/" includes="**/*.jar" >
 				<exclude name="hamcrest-all-1.3.jar" />
 				<exclude name="json-20180813-sources.jar" />
