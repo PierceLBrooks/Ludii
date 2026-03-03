@@ -1,0 +1,5 @@
+include ':app', ':common', ':core'
+rootProject.name='ludii'
+project(':common').projectDir=new File('../Common/gradle')
+project(':core').projectDir=new File('../Core/gradle')
+
