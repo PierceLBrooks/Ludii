@@ -1,6 +1,6 @@
 package main.collections;
 
-import gnu.trove.list.array.TLongArrayList;
+import gnu.trove.TLongArrayList;
 
 /**
  * Even more optimised version of TLongArrayList; provides a
@@ -32,7 +32,7 @@ public final class FastTLongArrayList extends TLongArrayList
 	 */
 	public FastTLongArrayList(final FastTLongArrayList other)
 	{
-		this.no_entry_value = -99L;
+		//this.no_entry_value = -99L;
 		final int length = other.size();
 		
 		if (length > 0)

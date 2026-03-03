@@ -6,7 +6,7 @@ import annotations.Hide;
 import game.Game;
 import game.functions.booleans.BaseBooleanFunction;
 import game.types.state.GameType;
-import gnu.trove.list.array.TLongArrayList;
+import gnu.trove.TLongArrayList;
 import other.context.Context;
 import other.trial.Trial;
 

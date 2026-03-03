@@ -1,6 +1,6 @@
 package main.math.statistics;
 
-import gnu.trove.list.array.TDoubleArrayList;
+import gnu.trove.TDoubleArrayList;
 
 /**
  * Code to compute Kolmogorov-Smirnov statistics for pairs of
@@ -31,9 +31,9 @@ public class KolmogorovSmirnov
 	public static double kolmogorovSmirnovStatistic(final TDoubleArrayList distA, final TDoubleArrayList distB)
 	{
 		// Sort both distributions
-		final TDoubleArrayList sortedA = new TDoubleArrayList(distA);
+		final TDoubleArrayList sortedA = new TDoubleArrayList(distA.toNativeArray());
 		sortedA.sort();
-		final TDoubleArrayList sortedB = new TDoubleArrayList(distB);
+		final TDoubleArrayList sortedB = new TDoubleArrayList(distB.toNativeArray());
 		sortedB.sort();
 		
 		// Loop through both distribution simultaneously and find point of maximum deviation

@@ -192,12 +192,12 @@ public class QuadTo extends PathOp
 	{
 		if (absolute())
 		{
-			path.quadTo(x0+x1, y0+y1, x0+x, y0+y);
+			path.quadTo((float) (x0+x1), (float) (y0+y1), (float) (x0+x), (float) (y0+y));
 		}
 		else
 		{
 			final Point2D pt = path.getCurrentPoint();
-			path.quadTo(pt.getX()+x1, pt.getY()+y1, pt.getX()+x, pt.getY()+y);
+			path.quadTo((float) (pt.getX()+x1), (float) (pt.getY()+y1), (float) (pt.getX()+x), (float) (pt.getY()+y));
 		}
 //		return new Point2D.Double(x1, y1);
 	}

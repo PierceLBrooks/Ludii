@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-import gnu.trove.list.array.TFloatArrayList;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TFloatArrayList;
+import gnu.trove.TIntArrayList;
 
 /**
  * Wrapper around an array of floats, with various "vectorised" methods
@@ -83,7 +83,7 @@ public final class FVector implements Serializable
 	 */
 	public FVector(final TFloatArrayList floats)
 	{
-		this.floats = floats.toArray();
+		this.floats = floats.toNativeArray();
 	}
 	
 	/**

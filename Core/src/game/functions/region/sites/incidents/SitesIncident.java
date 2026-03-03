@@ -13,7 +13,7 @@ import game.types.board.SiteType;
 import game.types.play.RoleType;
 import game.util.equipment.Region;
 import game.util.moves.Player;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.StringRoutines;
 import other.context.Context;
 import other.state.container.ContainerState;

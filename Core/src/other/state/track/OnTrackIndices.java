@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import game.equipment.container.board.Track;
-import gnu.trove.list.array.TIntArrayList;
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
+import gnu.trove.TIntArrayList;
+import gnu.trove.TIntObjectMap;
+import gnu.trove.TIntObjectHashMap;
 import main.collections.FastTIntArrayList;
 
 /**

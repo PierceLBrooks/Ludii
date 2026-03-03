@@ -77,7 +77,7 @@ import game.util.directions.AbsoluteDirection;
 import game.util.directions.DirectionFacing;
 import game.util.equipment.Region;
 import game.util.moves.To;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import graphics.ImageUtil;
 import main.Constants;
 import main.ReflectionUtils;
@@ -2719,7 +2719,7 @@ public class Game extends BaseLudeme implements API, Serializable
 				// Place randomly the cards of the deck in the game.
 				for (final Deck d : context.game().handDeck())
 				{
-					final TIntArrayList components = new TIntArrayList(d.indexComponent());
+					final TIntArrayList components = new TIntArrayList(d.indexComponent().toNativeArray());
 					final int nbCards = components.size();
 	
 					for (int i = 0; i < nbCards; i++)

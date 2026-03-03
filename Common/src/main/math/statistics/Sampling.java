@@ -2,7 +2,7 @@ package main.math.statistics;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import gnu.trove.list.array.TDoubleArrayList;
+import gnu.trove.TDoubleArrayList;
 
 /**
  * Some utilities for sampling.

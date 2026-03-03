@@ -19,7 +19,7 @@ import game.types.board.SiteType;
 import game.types.state.GameType;
 import game.util.directions.AbsoluteDirection;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import main.StringRoutines;
 import main.collections.FastTIntArrayList;

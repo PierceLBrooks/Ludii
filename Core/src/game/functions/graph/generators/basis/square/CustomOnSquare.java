@@ -14,7 +14,7 @@ import game.types.board.BasisType;
 import game.types.board.ShapeType;
 import game.types.board.SiteType;
 import game.util.graph.Graph;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.math.Polygon;
 import other.concept.Concept;
 import other.context.Context;

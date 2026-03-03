@@ -7,7 +7,7 @@ import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.List;
 
-import gnu.trove.list.array.TFloatArrayList;
+import gnu.trove.TFloatArrayList;
 
 //-----------------------------------------------------------------------------
 

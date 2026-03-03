@@ -19,7 +19,7 @@ import game.types.state.GameType;
 import game.util.equipment.Region;
 import game.util.moves.Piece;
 import game.util.moves.To;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.action.Action;
 import other.action.move.ActionAdd;

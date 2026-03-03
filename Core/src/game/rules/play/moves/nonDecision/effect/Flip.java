@@ -13,7 +13,7 @@ import game.rules.play.moves.Moves;
 import game.types.board.SiteType;
 import game.types.state.GameType;
 import game.util.moves.Flips;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.action.BaseAction;
 import other.action.move.ActionAdd;

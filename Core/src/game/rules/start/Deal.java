@@ -12,7 +12,7 @@ import game.equipment.container.other.Deck;
 import game.types.board.SiteType;
 import game.types.component.DealableType;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.action.Action;
 import other.action.move.move.ActionMove;

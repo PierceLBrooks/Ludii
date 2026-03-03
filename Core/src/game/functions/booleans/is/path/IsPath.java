@@ -21,7 +21,7 @@ import game.functions.range.RangeFunction;
 import game.types.board.SiteType;
 import game.types.play.RoleType;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.context.Context;
 import other.state.container.ContainerState;

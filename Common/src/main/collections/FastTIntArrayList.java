@@ -1,6 +1,6 @@
 package main.collections;
 
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 
 /**
  * Even more optimised version of TIntArrayList; provides a
@@ -41,7 +41,7 @@ public final class FastTIntArrayList extends TIntArrayList
 	 */
 	public FastTIntArrayList(final FastTIntArrayList other)
 	{
-		this.no_entry_value = -99;
+		//this.no_entry_value = -99;
 		final int length = other.size();
 		
 		if (length > 0)

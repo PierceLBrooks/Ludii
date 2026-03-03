@@ -14,7 +14,7 @@ import game.functions.region.BaseRegionFunction;
 import game.functions.region.RegionFunction;
 import game.types.play.RoleType;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.context.Context;
 

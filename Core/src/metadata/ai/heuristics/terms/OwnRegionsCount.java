@@ -4,7 +4,7 @@ import annotations.Name;
 import annotations.Opt;
 import game.Game;
 import game.equipment.other.Regions;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.collections.FVector;
 import metadata.ai.heuristics.HeuristicUtil;
 import metadata.ai.heuristics.transformations.HeuristicTransformation;

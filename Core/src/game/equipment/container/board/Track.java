@@ -13,7 +13,7 @@ import game.types.play.RoleType;
 import game.util.directions.DirectionFacing;
 import game.util.equipment.TrackStep;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.BaseLudeme;
 import other.concept.Concept;

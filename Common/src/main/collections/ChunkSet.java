@@ -31,7 +31,7 @@ import java.io.ObjectStreamField;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.math.BitTwiddling;
 
 //-----------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace "org.ludeme.ludii.utilitiesandroid"
+    compileSdk 34
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 35
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.java_version
+        targetCompatibility rootProject.ext.java_version
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'ro.andob.androidawt:androidawt:1.0.4'
+    implementation 'org.jetbrains.trove4j:trove4j:20160824'
+}
+

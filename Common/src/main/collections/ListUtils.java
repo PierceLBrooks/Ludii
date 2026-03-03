@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Predicate;
 
-import gnu.trove.list.array.TFloatArrayList;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TFloatArrayList;
+import gnu.trove.TIntArrayList;
 
 /**
  * Utility methods for lists
@@ -38,11 +38,11 @@ public class ListUtils
 		if (list.size() == 0)
 		{
 			List<TIntArrayList> perms = new ArrayList<TIntArrayList>(1);
-			perms.add(new TIntArrayList(0, list.getNoEntryValue()));
+			perms.add(new TIntArrayList(0));
 			return perms;
 		}
-		
-		final int lastElement = list.removeAt(list.size() - 1);
+
+		final int lastElement = list.remove(list.size() - 1);
 		final List<TIntArrayList> perms = new ArrayList<TIntArrayList>();
 		
 		final List<TIntArrayList> smallPerms = generatePermutations(list);
@@ -50,7 +50,7 @@ public class ListUtils
 		{
 			for (int i = smallPerm.size(); i >= 0; --i)
 			{
-				TIntArrayList newPerm = new TIntArrayList(smallPerm);
+				TIntArrayList newPerm = new TIntArrayList(smallPerm.toNativeArray());
 				newPerm.insert(i, lastElement);
 				perms.add(newPerm);
 			}
@@ -73,7 +73,7 @@ public class ListUtils
 		
 		for (int i = 0; i < numPermutations; ++i)
 		{
-			final TIntArrayList randomPerm = new TIntArrayList(list);
+			final TIntArrayList randomPerm = new TIntArrayList(list.toNativeArray());
 			randomPerm.shuffle(ThreadLocalRandom.current());
 			perms.add(randomPerm);
 		}
@@ -267,7 +267,7 @@ public class ListUtils
 	{
 		final int lastIdx = list.size() - 1;
 		list.setQuick(idx, list.getQuick(lastIdx));
-		list.removeAt(lastIdx);
+		list.remove(lastIdx);
 	}
 	
 	/**
@@ -280,7 +280,7 @@ public class ListUtils
 	{
 		final int lastIdx = list.size() - 1;
 		list.setQuick(idx, list.getQuick(lastIdx));
-		list.removeAt(lastIdx);
+		list.remove(lastIdx);
 	}
 	
 	/**

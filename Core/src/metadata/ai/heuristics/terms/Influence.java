@@ -4,7 +4,7 @@ import annotations.Name;
 import annotations.Opt;
 import game.Game;
 import game.types.state.GameType;
-import gnu.trove.set.hash.TIntHashSet;
+import gnu.trove.TIntHashSet;
 import main.collections.FVector;
 import main.collections.FastArrayList;
 import metadata.ai.heuristics.HeuristicUtil;

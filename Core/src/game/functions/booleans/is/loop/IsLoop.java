@@ -29,7 +29,7 @@ import game.util.directions.Direction;
 import game.util.directions.RelativeDirection;
 import game.util.equipment.Region;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.concept.Concept;
 import other.context.Context;

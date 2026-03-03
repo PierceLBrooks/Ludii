@@ -8,7 +8,7 @@ import game.Game;
 import game.functions.booleans.BaseBooleanFunction;
 import game.functions.ints.IntFunction;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 

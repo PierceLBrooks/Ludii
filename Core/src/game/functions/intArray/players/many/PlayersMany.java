@@ -10,7 +10,7 @@ import game.functions.booleans.BooleanFunction;
 import game.functions.intArray.BaseIntArrayFunction;
 import game.functions.intArray.players.PlayersManyType;
 import game.functions.ints.IntFunction;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.context.EvalContextData;
 

@@ -25,7 +25,7 @@ import game.types.state.GameType;
 import game.util.directions.AbsoluteDirection;
 import game.util.graph.Radial;
 import game.util.graph.Step;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.concept.Concept;
 import other.context.Context;

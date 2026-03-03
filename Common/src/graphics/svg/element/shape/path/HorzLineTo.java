@@ -141,11 +141,11 @@ public class HorzLineTo extends PathOp
 		final Point2D pt = path.getCurrentPoint();
 		if (absolute())
 		{
-			path.moveTo(x0+x, pt.getY());
+			path.moveTo((float) (x0+x), (float) pt.getY());
 		}
 		else
 		{
-			path.moveTo(pt.getX()+x, pt.getY());
+			path.moveTo((float) (pt.getX()+x), (float) pt.getY());
 		}
 	}
 	

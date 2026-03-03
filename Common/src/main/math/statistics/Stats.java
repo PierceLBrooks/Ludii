@@ -2,7 +2,7 @@ package main.math.statistics;
 import java.text.DecimalFormat;
 import java.util.Locale;
 
-import gnu.trove.list.array.TDoubleArrayList;
+import gnu.trove.TDoubleArrayList;
 
 //------------------------------------------------------------------------
 

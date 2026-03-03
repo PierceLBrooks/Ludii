@@ -925,7 +925,7 @@ public class SVGtoImage
 					final double cy = (Math.sin(theta) * ccx + Math.cos(theta) * ccy + (y1 + y2) / 2.0 - y0) * scaleY;
 
 					path.append(new Ellipse2D.Double(cx-rx, cy-ry, 2*rx, 2*ry), true);
-					path.lineTo(x2, y2);
+					path.lineTo((float) x2, (float) y2);
 
 					lastX = x2 / scaleX + x0;
 					lastY = y2 / scaleY + y0;
@@ -960,7 +960,7 @@ public class SVGtoImage
 					startX = lastX;
 					startY = lastY;			
 					
-					path.moveTo(x, y);
+					path.moveTo((float) x, (float) y);
 
 					prev = new Point2D.Double(x, y);
 					pts.add(op.pts().get(0));
@@ -975,7 +975,7 @@ public class SVGtoImage
 					lastX = op.pts().get(0).x + (op.absolute() ? 0 : lastX);
 					lastY = op.pts().get(0).y + (op.absolute() ? 0 : lastY);
 
-					path.lineTo(x, y);
+					path.lineTo((float) x, (float) y);
 
 					prev = new Point2D.Double(current.getX(), current.getY());
 					pts.add(op.pts().get(0));
@@ -989,7 +989,7 @@ public class SVGtoImage
 					
 					lastX = op.pts().get(0).x + (op.absolute() ? 0 : lastX);
 					
-					path.lineTo(x, y);
+					path.lineTo((float) x, (float) y);
 
 					prev = new Point2D.Double(current.getX(), current.getY());
 					pts.add(op.pts().get(0));
@@ -1003,7 +1003,7 @@ public class SVGtoImage
 
 					lastY = op.pts().get(0).y + (op.absolute() ? 0 : lastY);
 
-					path.lineTo(x, y);
+					path.lineTo((float) x, (float) y);
 
 					prev = new Point2D.Double(current.getX(), current.getY());
 					pts.add(op.pts().get(0));
@@ -1020,7 +1020,7 @@ public class SVGtoImage
 					lastX = op.pts().get(1).x + (op.absolute() ? 0 : lastX);
 					lastY = op.pts().get(1).y + (op.absolute() ? 0 : lastY);
 
-					path.quadTo(x1, y1, x, y);
+					path.quadTo((float) x1, (float) y1, (float) x, (float) y);
 
 					prev = new Point2D.Double(x1, y1);
 					pts.add(op.pts().get(1));  // only include destination point, not control points
@@ -1039,7 +1039,7 @@ public class SVGtoImage
 					lastX = op.pts().get(2).x + (op.absolute() ? 0 : lastX);
 					lastY = op.pts().get(2).y + (op.absolute() ? 0 : lastY);
 
-					path.curveTo(x1, y1, x2, y2, x, y);
+					path.curveTo((float) x1, (float) y1, (float) x2, (float) y2, (float) x, (float) y);
 
 					prev = new Point2D.Double(x2, y2);
 					pts.add(op.pts().get(2));  // only include destination point, not control points
@@ -1067,7 +1067,7 @@ public class SVGtoImage
 					x1 = 2 * curX - oldX;
 					y1 = 2 * curY - oldY;
 
-					path.quadTo(x1, y1, x, y);
+					path.quadTo((float) x1, (float) y1, (float) x, (float) y);
 
 					prev = new Point2D.Double(x1, y1);
 					pts.add(op.pts().get(1));  // only include destination point, not control points
@@ -1097,7 +1097,7 @@ public class SVGtoImage
 					x1 = 2 * curX - oldX;
 					y1 = 2 * curY - oldY;
 
-					path.quadTo(x1, y1, x, y);
+					path.quadTo((float) x1, (float) y1, (float) x, (float) y);
 
 					prev = new Point2D.Double(x1, y1);
 					pts.add(op.pts().get(1));  // only include destination point, not control points

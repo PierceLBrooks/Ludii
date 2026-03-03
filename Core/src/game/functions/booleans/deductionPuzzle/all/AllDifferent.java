@@ -14,7 +14,7 @@ import game.functions.region.RegionFunction;
 import game.types.board.RegionTypeStatic;
 import game.types.board.SiteType;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 import other.state.container.ContainerState;

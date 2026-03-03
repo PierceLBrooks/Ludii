@@ -21,7 +21,7 @@ import game.util.directions.AbsoluteDirection;
 import game.util.equipment.Region;
 import game.util.graph.GraphElement;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.ContainerId;
 import other.IntArrayFromRegion;

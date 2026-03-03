@@ -5,7 +5,7 @@ import java.util.List;
 
 import game.Game;
 import game.equipment.component.Component;
-import gnu.trove.list.array.TFloatArrayList;
+import gnu.trove.TFloatArrayList;
 import main.collections.FVector;
 import metadata.ai.AIItem;
 import metadata.ai.heuristics.transformations.HeuristicTransformation;

@@ -14,7 +14,7 @@ import game.rules.play.moves.Moves;
 import game.rules.play.moves.nonDecision.effect.Effect;
 import game.rules.play.moves.nonDecision.effect.Then;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.action.state.ActionRememberValue;
 import other.concept.Concept;
 import other.context.Context;

@@ -10,7 +10,7 @@ import game.types.board.RelationType;
 import game.types.state.GameType;
 import game.util.directions.AbsoluteDirection;
 import game.util.directions.DirectionFacing;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 
 /**

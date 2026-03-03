@@ -11,7 +11,7 @@ import game.functions.ints.IntFunction;
 import game.functions.ints.last.LastTo;
 import game.functions.region.RegionFunction;
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.IntArrayFromRegion;
 import other.context.Context;
 

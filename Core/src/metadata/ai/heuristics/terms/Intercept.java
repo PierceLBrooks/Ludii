@@ -8,7 +8,7 @@ import annotations.Name;
 import annotations.Opt;
 import game.Game;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TFloatArrayList;
+import gnu.trove.TFloatArrayList;
 import main.Constants;
 import main.StringRoutines;
 import main.collections.FVector;

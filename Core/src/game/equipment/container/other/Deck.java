@@ -19,7 +19,7 @@ import game.types.component.CardType;
 import game.types.play.RoleType;
 import game.util.graph.Face;
 import game.util.graph.Graph;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import metadata.graphics.util.ContainerStyleType;
 import other.ItemType;

@@ -21,7 +21,7 @@ import game.rules.play.moves.Moves;
 import game.types.play.RoleType;
 import game.types.state.GameType;
 import game.util.directions.Direction;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.action.others.ActionNote;
 import other.context.Context;
 import other.move.Move;

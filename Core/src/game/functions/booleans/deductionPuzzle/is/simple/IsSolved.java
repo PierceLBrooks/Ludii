@@ -9,7 +9,7 @@ import game.functions.booleans.BooleanFunction;
 import game.rules.play.moves.nonDecision.effect.Satisfy;
 import game.types.board.SiteType;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 import other.context.TempContext;

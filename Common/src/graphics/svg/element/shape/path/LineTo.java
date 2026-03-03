@@ -144,12 +144,12 @@ public class LineTo extends PathOp
 	{
 		if (absolute())
 		{
-			path.lineTo(x0+x, y0+y);
+			path.lineTo((float) (x0+x), (float) (y0+y));
 		}
 		else
 		{
 			final Point2D pt = path.getCurrentPoint();
-			path.lineTo(pt.getX()+x, pt.getY()+y);
+			path.lineTo((float) (pt.getX()+x), (float) (pt.getY()+y));
 		}
 	}
 	

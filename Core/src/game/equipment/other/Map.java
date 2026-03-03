@@ -12,7 +12,7 @@ import game.types.board.LandmarkType;
 import game.types.board.SiteType;
 import game.types.play.RoleType;
 import game.util.math.Pair;
-import gnu.trove.map.hash.TIntIntHashMap;
+import gnu.trove.TIntIntHashMap;
 import main.Constants;
 import main.StringRoutines;
 import other.ItemType;

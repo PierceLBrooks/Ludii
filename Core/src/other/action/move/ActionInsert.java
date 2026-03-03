@@ -3,7 +3,7 @@ package other.action.move;
 import game.equipment.component.Component;
 import game.equipment.container.board.Track;
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.action.Action;
 import other.action.ActionType;

@@ -10,7 +10,7 @@ import game.functions.ints.IntFunction;
 import game.rules.play.moves.BaseMoves;
 import game.rules.play.moves.Moves;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 

@@ -26,5 +26,7 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'ro.andob.androidawt:androidawt:1.0.4'
+    implementation 'org.jetbrains.trove4j:trove4j:20160824'
+    implementation project(':utilitiesandroid')
 }
 

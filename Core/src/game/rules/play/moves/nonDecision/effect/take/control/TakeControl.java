@@ -18,7 +18,7 @@ import game.rules.play.moves.nonDecision.effect.Effect;
 import game.rules.play.moves.nonDecision.effect.Then;
 import game.types.board.SiteType;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.IntArrayFromRegion;
 import other.action.Action;

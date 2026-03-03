@@ -6,7 +6,7 @@ import java.util.List;
 
 import game.Game;
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.location.CellOnlyLocation;
 import other.location.Location;
 import other.state.OwnedIndexMapper;

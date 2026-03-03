@@ -13,7 +13,7 @@ import game.types.board.SiteType;
 import game.types.play.RoleType;
 import game.util.directions.AbsoluteDirection;
 import game.util.graph.Step;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.PlayersIndices;
 import other.concept.Concept;
 import other.context.Context;

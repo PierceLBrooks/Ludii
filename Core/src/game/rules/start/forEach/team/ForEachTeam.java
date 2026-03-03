@@ -5,7 +5,7 @@ import java.util.BitSet;
 import annotations.Hide;
 import game.Game;
 import game.rules.start.StartRule;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 import other.context.EvalContextData;

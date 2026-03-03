@@ -16,7 +16,7 @@ import game.functions.ints.last.LastTo;
 import game.types.board.SiteType;
 import game.util.directions.AbsoluteDirection;
 import game.util.directions.Direction;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.context.EvalContextData;
 import other.state.container.ContainerState;

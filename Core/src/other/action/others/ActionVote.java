@@ -3,7 +3,7 @@ package other.action.others;
 import java.util.BitSet;
 
 import game.rules.play.moves.Moves;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.action.Action;
 import other.action.ActionType;
 import other.action.BaseAction;

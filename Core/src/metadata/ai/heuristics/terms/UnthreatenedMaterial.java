@@ -8,7 +8,7 @@ import annotations.Opt;
 import game.Game;
 import game.equipment.component.Component;
 import game.types.board.SiteType;
-import gnu.trove.set.hash.TIntHashSet;
+import gnu.trove.TIntHashSet;
 import main.Constants;
 import main.StringRoutines;
 import main.collections.FVector;

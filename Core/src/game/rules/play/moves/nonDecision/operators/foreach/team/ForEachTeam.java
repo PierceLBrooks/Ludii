@@ -9,7 +9,7 @@ import game.rules.play.moves.BaseMoves;
 import game.rules.play.moves.Moves;
 import game.rules.play.moves.nonDecision.effect.Effect;
 import game.rules.play.moves.nonDecision.effect.Then;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.collections.FastArrayList;
 import other.concept.Concept;
 import other.context.Context;

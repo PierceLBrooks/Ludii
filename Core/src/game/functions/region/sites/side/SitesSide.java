@@ -15,7 +15,7 @@ import game.types.play.RoleType;
 import game.util.directions.CompassDirection;
 import game.util.directions.DirectionFacing;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.topology.TopologyElement;
 

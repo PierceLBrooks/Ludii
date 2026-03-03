@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import game.rules.play.moves.Moves;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.move.Move;
 import other.state.State;

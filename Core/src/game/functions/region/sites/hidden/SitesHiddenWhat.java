@@ -15,7 +15,7 @@ import game.types.play.RoleType;
 import game.types.state.GameType;
 import game.util.equipment.Region;
 import game.util.moves.Player;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.PlayersIndices;
 import other.concept.Concept;
 import other.context.Context;

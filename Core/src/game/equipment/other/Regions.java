@@ -17,7 +17,7 @@ import game.util.directions.AbsoluteDirection;
 import game.util.directions.DirectionFacing;
 import game.util.equipment.Region;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.ItemType;
 import other.context.Context;

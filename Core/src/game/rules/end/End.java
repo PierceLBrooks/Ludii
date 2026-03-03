@@ -9,7 +9,7 @@ import game.functions.ints.board.Id;
 import game.rules.Rule;
 import game.types.play.ResultType;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import main.Status;
 import other.BaseLudeme;

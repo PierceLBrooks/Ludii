@@ -3,9 +3,9 @@ package other;
 import java.util.Arrays;
 import java.util.BitSet;
 
-import gnu.trove.list.array.TIntArrayList;
-import gnu.trove.list.array.TLongArrayList;
-import gnu.trove.set.hash.TIntHashSet;
+import gnu.trove.TIntArrayList;
+import gnu.trove.TLongArrayList;
+import gnu.trove.TIntHashSet;
 import main.Status;
 import main.collections.FastTIntArrayList;
 import other.state.owned.Owned;

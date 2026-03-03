@@ -16,9 +16,9 @@ import game.util.directions.AbsoluteDirection;
 import game.util.directions.Direction;
 import game.util.directions.DirectionFacing;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
-import gnu.trove.list.array.TLongArrayList;
-import gnu.trove.set.hash.TIntHashSet;
+import gnu.trove.TIntArrayList;
+import gnu.trove.TLongArrayList;
+import gnu.trove.TIntHashSet;
 import main.Constants;
 import main.Status;
 import main.collections.FastArrayList;
@@ -178,7 +178,7 @@ public class Move extends BaseAction
 	{
 		from = other.from;
 		to = other.to;
-		between = new TIntArrayList(other.between);
+		between = new TIntArrayList(other.between.toNativeArray());
 		actions = new ArrayList<Action>(other.actions);
 		mover = other.mover;
 	}
@@ -199,7 +199,7 @@ public class Move extends BaseAction
 		from = a.from();
 		to = a.to();
 		if (!list.isEmpty())
-			between = new TIntArrayList(list.get(0).betweenNonDecision());
+			between = new TIntArrayList(list.get(0).betweenNonDecision().toNativeArray());
 	}
 
 	/**
@@ -217,7 +217,7 @@ public class Move extends BaseAction
 
 		from = actions.get(0).from();
 		to = actions.get(0).to();
-		between = new TIntArrayList(list.get(0).betweenNonDecision());
+		between = new TIntArrayList(list.get(0).betweenNonDecision().toNativeArray());
 	}
 
 	/**
@@ -243,7 +243,7 @@ public class Move extends BaseAction
 		{
 			from = actions.get(0).from();
 			to = actions.get(0).to();
-			between = new TIntArrayList(list.get(0).betweenNonDecision());
+			between = new TIntArrayList(list.get(0).betweenNonDecision().toNativeArray());
 		}
 
 	}
@@ -593,7 +593,7 @@ public class Move extends BaseAction
 
 		final Move returnMove = new Move(returnActions);
 		returnMove.setFromNonDecision(from);
-		returnMove.setBetweenNonDecision(new TIntArrayList(betweenNonDecision()));
+		returnMove.setBetweenNonDecision(new TIntArrayList(betweenNonDecision().toNativeArray()));
 		returnMove.setToNonDecision(to);
 		returnMove.setStateNonDecision(state);
 		returnMove.setOrientedMove(oriented);

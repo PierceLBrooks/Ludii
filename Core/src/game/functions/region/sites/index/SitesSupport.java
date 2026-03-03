@@ -14,7 +14,7 @@ import game.util.equipment.Region;
 import other.context.Context;
 import other.state.container.ContainerState;
 import other.topology.TopologyElement;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 
 /**
  * Returns the sites which are supporting other pieces on sites on top of them.

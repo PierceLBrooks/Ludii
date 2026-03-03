@@ -20,7 +20,7 @@ import game.types.state.GameType;
 import game.util.directions.AbsoluteDirection;
 import game.util.directions.DirectionFacing;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 import other.context.EvalContextData;

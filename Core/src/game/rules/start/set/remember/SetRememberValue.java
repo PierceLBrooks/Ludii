@@ -13,7 +13,7 @@ import game.functions.ints.IntFunction;
 import game.functions.region.RegionFunction;
 import game.rules.start.StartRule;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.IntArrayFromRegion;
 import other.action.state.ActionRememberValue;
 import other.concept.Concept;

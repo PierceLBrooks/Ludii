@@ -1,7 +1,7 @@
 package other;
 
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 
 /**

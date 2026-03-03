@@ -19,7 +19,7 @@ import game.types.board.StepType;
 import game.util.directions.DirectionFacing;
 import game.util.equipment.Region;
 import game.util.graph.Step;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.ContainerId;
 import other.context.Context;

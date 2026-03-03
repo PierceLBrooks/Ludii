@@ -10,7 +10,7 @@ import game.functions.booleans.BooleanConstant;
 import game.functions.booleans.BooleanFunction;
 import game.functions.region.RegionFunction;
 import game.rules.start.StartRule;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 import other.context.EvalContextData;

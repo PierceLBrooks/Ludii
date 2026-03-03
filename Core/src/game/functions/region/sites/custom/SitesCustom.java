@@ -9,7 +9,7 @@ import game.functions.intArray.IntArrayFunction;
 import game.functions.ints.IntFunction;
 import game.functions.region.BaseRegionFunction;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 
 /**

@@ -21,7 +21,7 @@ import game.types.board.SiteType;
 import game.types.play.RoleType;
 import game.types.state.GameType;
 import game.util.moves.Player;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.StringRoutines;
 import other.IntArrayFromRegion;
 import other.PlayersIndices;

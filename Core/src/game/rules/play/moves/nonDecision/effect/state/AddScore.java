@@ -12,7 +12,7 @@ import game.rules.play.moves.nonDecision.effect.Effect;
 import game.rules.play.moves.nonDecision.effect.Then;
 import game.types.play.RoleType;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.PlayersIndices;
 import other.action.state.ActionSetScore;
 import other.concept.Concept;

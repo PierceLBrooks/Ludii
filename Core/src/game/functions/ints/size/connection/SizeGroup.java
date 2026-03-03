@@ -15,7 +15,7 @@ import game.functions.ints.IntFunction;
 import game.types.board.SiteType;
 import game.util.directions.AbsoluteDirection;
 import game.util.directions.Direction;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.state.container.ContainerState;
 import other.topology.Topology;

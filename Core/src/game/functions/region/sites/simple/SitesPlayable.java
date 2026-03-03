@@ -16,7 +16,7 @@ import game.functions.region.sites.around.SitesAround;
 import game.functions.region.sites.index.SitesEmpty;
 import game.types.board.SiteType;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.state.container.ContainerState;
 

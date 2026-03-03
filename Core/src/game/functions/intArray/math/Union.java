@@ -5,7 +5,7 @@ import java.util.BitSet;
 import game.Game;
 import game.functions.intArray.BaseIntArrayFunction;
 import game.functions.intArray.IntArrayFunction;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.concept.Concept;
 import other.context.Context;
 

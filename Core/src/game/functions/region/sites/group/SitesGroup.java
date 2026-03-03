@@ -21,7 +21,7 @@ import game.util.directions.AbsoluteDirection;
 import game.util.directions.Direction;
 import game.util.equipment.Region;
 import game.util.graph.Step;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.IntArrayFromRegion;
 import other.concept.Concept;
 import other.context.Context;

@@ -12,7 +12,7 @@ import game.functions.ints.IntFunction;
 import game.functions.region.BaseRegionFunction;
 import game.types.play.RoleType;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.context.Context;
 

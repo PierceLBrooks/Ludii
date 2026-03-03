@@ -9,7 +9,7 @@ import game.equipment.container.board.Board;
 import game.types.board.SiteType;
 import game.util.directions.AbsoluteDirection;
 import game.util.graph.Step;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.collections.ChunkSet;
 import other.BaseLudeme;
 import other.topology.Edge;

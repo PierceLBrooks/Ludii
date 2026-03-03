@@ -24,7 +24,7 @@ import game.rules.play.moves.nonDecision.operator.Operator;
 import game.types.board.SiteType;
 import game.types.play.RoleType;
 import game.types.state.GameType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.ContainerId;
 import other.concept.Concept;
 import other.context.Context;

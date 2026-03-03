@@ -15,7 +15,7 @@ import game.functions.region.sites.occupied.SitesOccupied;
 import game.rules.play.moves.Moves;
 import game.types.board.SiteType;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.IntArrayFromRegion;
 import other.concept.Concept;

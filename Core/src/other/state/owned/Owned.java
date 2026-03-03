@@ -3,7 +3,7 @@ package other.state.owned;
 import java.util.List;
 
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.location.Location;
 
 /**

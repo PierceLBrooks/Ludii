@@ -19,7 +19,7 @@ import game.rules.play.moves.Moves;
 import game.types.board.SiteType;
 import game.util.directions.AbsoluteDirection;
 import game.util.directions.Direction;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.StringRoutines;
 import main.collections.FastTIntArrayList;
 import other.concept.Concept;

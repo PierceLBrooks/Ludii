@@ -17,7 +17,7 @@ import game.types.play.RoleType;
 import game.util.directions.DirectionFacing;
 import game.util.graph.Step;
 import game.util.moves.Flips;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import main.StringRoutines;
 import metadata.graphics.util.ComponentStyleType;

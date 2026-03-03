@@ -12,7 +12,7 @@ import game.types.board.SiteType;
 import game.util.directions.AbsoluteDirection;
 import game.util.directions.DirectionFacing;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.action.Action;
 import other.action.ActionType;

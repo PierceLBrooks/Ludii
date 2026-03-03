@@ -144,12 +144,12 @@ public class MoveTo extends PathOp
 	{
 		if (absolute())
 		{
-			path.moveTo(x0+x, y0+y);
+			path.moveTo((float) (x0+x), (float) (y0+y));
 		}
 		else
 		{
 			final Point2D pt = path.getCurrentPoint();
-			path.moveTo(pt.getX()+x, pt.getY()+y);
+			path.moveTo((float) (pt.getX()+x), (float) (pt.getY()+y));
 		}
 	}
 

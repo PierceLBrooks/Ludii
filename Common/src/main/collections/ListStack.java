@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 
 /**
  * The three possible lists for each level of each site (for card
@@ -221,11 +221,11 @@ public final class ListStack implements Serializable
 		type = other.type;
 		size = other.size;
 		
-		what = (other.what == null) ? null : new TIntArrayList(other.what);
-		who = (other.who == null) ? null : new TIntArrayList(other.who);
-		state = (other.state == null) ? null : new TIntArrayList(other.state);
-		rotation = (other.rotation == null) ? null : new TIntArrayList(other.rotation);
-		value = (other.value == null) ? null : new TIntArrayList(other.value);
+		what = (other.what == null) ? null : new TIntArrayList(other.what.toNativeArray());
+		who = (other.who == null) ? null : new TIntArrayList(other.who.toNativeArray());
+		state = (other.state == null) ? null : new TIntArrayList(other.state.toNativeArray());
+		rotation = (other.rotation == null) ? null : new TIntArrayList(other.rotation.toNativeArray());
+		value = (other.value == null) ? null : new TIntArrayList(other.value.toNativeArray());
 		
 		if (other.hidden == null)
 		{
@@ -243,35 +243,35 @@ public final class ListStack implements Serializable
 			hiddenWhat = new ArrayList<TIntArrayList>(other.hiddenWhat);
 			for (int i = 1; i < this.hidden.size(); ++i)
 			{
-				this.hidden.set(i, new TIntArrayList(other.hidden.get(i)));
-				this.hiddenWhat.set(i, new TIntArrayList(other.hiddenWhat.get(i)));
+				this.hidden.set(i, new TIntArrayList(other.hidden.get(i).toNativeArray()));
+				this.hiddenWhat.set(i, new TIntArrayList(other.hiddenWhat.get(i).toNativeArray()));
 			}
 
 			if (type > 0)
 			{
 				hiddenWho = new ArrayList<TIntArrayList>(other.hiddenWho);
 				for (int i = 1; i < this.hiddenWho.size(); ++i)
-					this.hiddenWho.set(i, new TIntArrayList(other.hiddenWho.get(i)));
+					this.hiddenWho.set(i, new TIntArrayList(other.hiddenWho.get(i).toNativeArray()));
 
 				if (type > 1)
 				{
 					hiddenState = new ArrayList<TIntArrayList>(other.hiddenState);
 					for (int i = 1; i < this.hiddenState.size(); ++i)
-						this.hiddenState.set(i, new TIntArrayList(other.hiddenState.get(i)));
+						this.hiddenState.set(i, new TIntArrayList(other.hiddenState.get(i).toNativeArray()));
 					
 					if (type >= 2)
 					{
 						hiddenCount = new ArrayList<TIntArrayList>(other.hiddenCount);
 						for (int i = 1; i < this.hiddenCount.size(); ++i)
-							this.hiddenCount.set(i, new TIntArrayList(other.hiddenCount.get(i)));
+							this.hiddenCount.set(i, new TIntArrayList(other.hiddenCount.get(i).toNativeArray()));
 
 						hiddenRotation = new ArrayList<TIntArrayList>(other.hiddenRotation);
 						for (int i = 1; i < this.hiddenRotation.size(); ++i)
-							this.hiddenRotation.set(i, new TIntArrayList(other.hiddenRotation.get(i)));
+							this.hiddenRotation.set(i, new TIntArrayList(other.hiddenRotation.get(i).toNativeArray()));
 						
 						hiddenValue = new ArrayList<TIntArrayList>(other.hiddenValue);
 						for (int i = 1; i < this.hiddenValue.size(); ++i)
-							this.hiddenValue.set(i, new TIntArrayList(other.hiddenValue.get(i)));
+							this.hiddenValue.set(i, new TIntArrayList(other.hiddenValue.get(i).toNativeArray()));
 					}
 					else
 					{
@@ -441,15 +441,15 @@ public final class ListStack implements Serializable
 	public void remove() 
 	{
 		if(what != null && what.size() > 0 )
-			what.removeAt(what.size()-1);
+			what.remove(what.size()-1);
 		if(who != null && who.size() > 0 )
-			who.removeAt(who.size()-1);
+			who.remove(who.size()-1);
 		if(state != null && state.size() > 0 )
-			state.removeAt(state.size()-1);
+			state.remove(state.size()-1);
 		if(rotation != null && rotation.size() > 0 )
-			rotation.removeAt(rotation.size()-1);
+			rotation.remove(rotation.size()-1);
 		if(value != null && value.size() > 0 )
-			value.removeAt(value.size()-1);
+			value.remove(value.size()-1);
 	}
 	
 	/**
@@ -459,15 +459,15 @@ public final class ListStack implements Serializable
 	public void remove(final int level) 
 	{
 		if(what != null && what.size() > level && what.size() > 0)
-			what.removeAt(level);
+			what.remove(level);
 		if(who != null && who.size() > level && who.size() > 0)
-			who.removeAt(level);
+			who.remove(level);
 		if(state != null && state.size() > level && state.size() > 0)
-			state.removeAt(level);
+			state.remove(level);
 		if(rotation != null && rotation.size() > level && rotation.size() > 0)
-			rotation.removeAt(level);
+			rotation.remove(level);
 		if(value != null && value.size() > level  && value.size() > 0)
-			value.removeAt(level);
+			value.remove(level);
 	}
 	
 	//--------------------- State -------------------------

@@ -1,5 +1,6 @@
-include ':app', ':common', ':core'
+include ':app', ':common', ':core', ':utilitiesandroid'
 rootProject.name='ludii'
-project(':common').projectDir=new File('../Common/gradle')
 project(':core').projectDir=new File('../Core/gradle')
+project(':common').projectDir=new File('../Common/gradle')
+project(':utilitiesandroid').projectDir=new File('../UtilitiesAndroid')
 

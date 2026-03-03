@@ -14,7 +14,7 @@ import game.functions.ints.IntFunction;
 import game.functions.region.RegionFunction;
 import game.types.board.SiteType;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.PlayersIndices;
 import other.concept.Concept;
 import other.context.Context;

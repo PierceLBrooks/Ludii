@@ -6,7 +6,7 @@ import java.util.BitSet;
 
 import game.Game;
 import game.util.directions.DirectionFacing;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.BaseLudeme;
 import other.concept.Concept;
 

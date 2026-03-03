@@ -138,11 +138,11 @@ public class VertLineTo extends PathOp
 		final Point2D pt = path.getCurrentPoint();
 		if (absolute())
 		{
-			path.moveTo(pt.getX(), y0+y);
+			path.moveTo((float) pt.getX(), (float) (y0+y));
 		}
 		else
 		{
-			path.moveTo(pt.getX(), pt.getY()+y);
+			path.moveTo((float) pt.getX(), (float) (pt.getY()+y));
 		}
 	}
 	

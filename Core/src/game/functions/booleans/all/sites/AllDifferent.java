@@ -11,7 +11,7 @@ import game.functions.booleans.BaseBooleanFunction;
 import game.functions.booleans.BooleanFunction;
 import game.functions.region.RegionFunction;
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.context.Context;
 import other.context.EvalContextData;
 import other.location.FullLocation;

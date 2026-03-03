@@ -18,7 +18,7 @@ import game.util.graph.GraphElement;
 import game.util.graph.MeasureGraph;
 import game.util.graph.Poly;
 import game.util.graph.Vertex;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.math.MathRoutines;
 import main.math.Polygon;
 import main.math.Vector;

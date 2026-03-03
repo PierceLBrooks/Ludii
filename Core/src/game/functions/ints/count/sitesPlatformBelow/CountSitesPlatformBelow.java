@@ -16,7 +16,7 @@ import game.types.play.RoleType;
 import game.types.state.GameType;
 import game.util.directions.AbsoluteDirection;
 import game.util.graph.Step;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.context.Context;
 import other.state.container.ContainerState;

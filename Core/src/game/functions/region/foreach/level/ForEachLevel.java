@@ -13,7 +13,7 @@ import game.functions.region.BaseRegionFunction;
 import game.types.board.SiteType;
 import game.util.directions.StackDirection;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.context.Context;
 import other.context.EvalContextData;

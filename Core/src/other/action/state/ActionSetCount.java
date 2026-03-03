@@ -6,7 +6,7 @@ import game.equipment.component.Component;
 import game.equipment.container.board.Track;
 import game.rules.play.moves.Moves;
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.action.Action;
 import other.action.ActionType;

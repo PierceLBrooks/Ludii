@@ -13,7 +13,7 @@ import game.functions.ints.IntFunction;
 import game.functions.ints.iterator.From;
 import game.functions.ints.state.Mover;
 import game.types.play.RoleType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.Constants;
 import other.context.Context;
 import other.state.container.ContainerState;

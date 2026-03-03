@@ -7,7 +7,7 @@ import game.Game;
 import game.functions.region.BaseRegionFunction;
 import game.rules.play.moves.Moves;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import other.action.Action;
 import other.context.Context;
 import other.move.Move;

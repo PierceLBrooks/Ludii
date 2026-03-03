@@ -21,7 +21,7 @@ import game.types.board.SiteType;
 import game.util.directions.AbsoluteDirection;
 import game.util.graph.GraphElement;
 import game.util.graph.Radial;
-import gnu.trove.list.array.TFloatArrayList;
+import gnu.trove.TFloatArrayList;
 import main.Constants;
 import main.ReflectionUtils;
 import main.collections.FVector;

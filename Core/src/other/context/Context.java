@@ -25,8 +25,8 @@ import game.rules.end.End;
 import game.rules.play.moves.Moves;
 import game.types.play.RoleType;
 import game.util.equipment.Region;
-import gnu.trove.list.array.TIntArrayList;
-import gnu.trove.map.hash.TIntIntHashMap;
+import gnu.trove.TIntArrayList;
+import gnu.trove.TIntIntHashMap;
 import main.Constants;
 import main.math.BitTwiddling;
 import metadata.Metadata;
@@ -318,8 +318,8 @@ public class Context
 
 			active = other.active;
 			
-			winners = new TIntArrayList(other.winners);
-			losers = new TIntArrayList(other.losers);
+			winners = new TIntArrayList(other.winners.toNativeArray());
+			losers = new TIntArrayList(other.losers.toNativeArray());
 		}
 		finally
 		{
@@ -1709,8 +1709,8 @@ public class Context
 
 		active = context.active;
 		
-		winners = new TIntArrayList(context.winners());
-		losers = new TIntArrayList(context.losers());
+		winners = new TIntArrayList(context.winners().toNativeArray());
+		losers = new TIntArrayList(context.losers().toNativeArray());
 	}
 	
 	/**

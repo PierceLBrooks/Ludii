@@ -15,7 +15,7 @@ import game.functions.graph.BaseGraphFunction;
 import game.types.board.BasisType;
 import game.types.board.ShapeType;
 import game.types.board.SiteType;
-import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.TIntArrayList;
 import main.math.MathRoutines;
 import main.math.Point3D;
 import main.math.Vector;
